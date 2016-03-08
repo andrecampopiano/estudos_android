@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/centered_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FF0000"
+        app:layout_heightPercent="@fraction/fifty_percent"
+        app:layout_widthPercent="@fraction/fifty_percent"/>
+
+    <TextView
+        android:id="@+id/caption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/centered_image"
+        android:background="#00FF00"
+        android:text="Texto"
+        app:layout_marginRightPercent="@fraction/twentyfive_percent"
+        app:layout_marginLeftPercent="@fraction/twentyfive_percent"
+        app:layout_widthPercent="50%"
+        />
+</android.support.percent.PercentRelativeLayout>
